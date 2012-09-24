@@ -1,1 +1,7 @@
 /* Sparky.CSS */
+
+svg{
+	background-color: #FAFAFA;
+	height: 25px;
+	width: 75px;
+}
