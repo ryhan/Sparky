@@ -10,10 +10,10 @@ Getting Started
 Usage
 -----
 
-## Add the `data-sparkline` attribute
+#### Add the data-sparkline attribute
 Add `data-sparkline="1,2,3"` to an element, where "1,2,3" can be any series of numbers.
 
-## Call `Sparky.fetch()`
+#### Call Sparky.fetch()
 Next, call `sparky.fetch();` to render sparklines.
 
 To adjust the appearance of the rendered sparkline, use one of these optional additional data attributes.
