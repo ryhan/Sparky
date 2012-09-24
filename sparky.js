@@ -97,5 +97,4 @@ function(){
 
 	// Publicly accessible functions
 	return {fetch: fetch};
-
 })();
