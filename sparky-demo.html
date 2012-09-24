@@ -2,19 +2,49 @@
 <html>
 <head>
 	<title>Sparky</title>
-
 	<script type="text/javascript" src="underscore.js"></script>
-
+	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="sparky.js"></script>
-	<link rel="stylesheet" type="text/css" href="sparky.css">
-
 </head>
 <body>
 
 <!-- BEGIN CONTENT -->
-<svg id="sparky"></svg>
-
+<ul>
+	<li><span data-sparkline="77, 75, 63, 88, 85"></span><span>Albert</span></li>
+	<li><span data-sparkline="90, 88, 75, 78, 84"></span><span>Bobby</span></li>
+	<li><span data-sparkline="92, 95, 94, 90, 98"></span><span>Carolyn</span></li>
+	<li><span data-sparkline="99, 94, 95, 85, 88"></span><span>David</span></li>
+	<li><span data-sparkline="85, 89, 84, 95, 98"></span><span>Eve</span></li>
+</ul>
 <!-- END CONTENT -->
+
+<script type="text/javascript">
+	$(function(){
+		sparky.fetch();
+	});
+</script>
+
+<style>
+	body{
+		padding: 100px;
+		font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  		font-weight: 300px;
+  		font-size: 16px;
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		background-color: #FFF;
+		margin: 15px 0;
+	}
+	span:nth-child(2){
+		margin-left: 10px;
+	}
+
+</style>
 
 </body>
 </html>
