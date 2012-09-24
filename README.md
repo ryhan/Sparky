@@ -9,7 +9,14 @@ Getting Started
 
 Usage
 -----
-* Add `data-sparkline="1,2,3"` to an element, where "1,2,3" can be any series of numbers. It is recommended to use a `<span>` element for this.
-* (Optional) Set `data-sparkline-width` and `data-sparkline-height` to be some integer representing the pixel width and height of the sparkline.
-* (Optional) Set `data-sparkline-bgcolor`to be some string representing the color code of the background of the sparkline. 
-* Call `sparky.fetch();` to render sparklines.
+
+## Add the `data-sparkline` attribute
+Add `data-sparkline="1,2,3"` to an element, where "1,2,3" can be any series of numbers.
+
+## Call `Sparky.fetch()`
+Next, call `sparky.fetch();` to render sparklines.
+
+To adjust the appearance of the rendered sparkline, use one of these optional additional data attributes.
+* `data-sparkline-bgcolor` expects a string representing background color.
+* `data-sparkline-width` expects an integer representing pixel width.
+* `data-sparkline-height` expects an integer representing pixel height.
