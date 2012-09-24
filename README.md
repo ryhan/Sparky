@@ -1,0 +1,4 @@
+Sparky
+======
+
+Super Simple Sparklines
