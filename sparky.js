@@ -2,12 +2,24 @@
  * Sparky.js
  * Super Simple Sparklines
  * Written by Ryhan Hassan
+ *
+ * Usage
+ * Add`data-sparkline="1,2,3"` to an element,
+ * where "1,2,3" can be any series of numbers.
+ * Then, call `sparky.fetch();` to render sparklines.
  */
 
+
+// Wrapper around sparkline generation functions.
 var sparky = (	
 function(){
 
-	// Generates a sparkline SVG
+	/* 
+	 * Sparkline
+	 * GIVEN list, an array of numbers
+	 * GIVEN attr, an object of optional attributes
+	 * RETURN an svg element containing a sparkline.
+	 */
 	var sparkline = function(list, attr)
 	{
 		// Raw supplied data
@@ -67,7 +79,12 @@ function(){
 		return svg;
 	};
 
-	// Update cycle
+	/*
+	 * Fetch
+	 * Looks for data-sparkline and 
+	 * inserts an appropriate sparkline
+	 * into the element.
+	 */
 	var fetch = function()
 	{
 		var sparklines = $('[data-sparkline]');
@@ -84,7 +101,7 @@ function(){
 				width: element.getAttribute('data-sparkline-width'),
 			}
 
-			// Attach the new SVG to the parent elemtn
+			// Attach the new SVG to the parent element
 			if (list.length > 0)
 			{
 				var svg = sparkline(list, attr);
@@ -95,6 +112,6 @@ function(){
 		})
 	};
 
-	// Publicly accessible functions
+	// Return any publicly accessible functions
 	return {fetch: fetch};
 })();
