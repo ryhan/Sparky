@@ -1,7 +1,7 @@
 Sparky.js
 =========
 
-Sparky is a simple way to create sparklines, created and maintained by [Ryhan Hassan](http://github.com/ryhan).
+Sparky is a simple way to create sparklines, created by [Ryhan Hassan](http://github.com/ryhan).
 
 Getting Started
 ---------------
