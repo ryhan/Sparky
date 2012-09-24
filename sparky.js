@@ -70,7 +70,7 @@ function(){
 	// Update cycle
 	var fetch = function()
 	{
-		var sparklines = $(':not([data-sparkline==""]');
+		var sparklines = $('[data-sparkline]');
 		_.map(sparklines, function(element)
 		{	
 			// Pull out and sanitize the list data
