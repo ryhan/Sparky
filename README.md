@@ -16,6 +16,7 @@ Add `data-sparkline="1,2,3"` to an element, where "1,2,3" can be any series of n
 #### Call Sparky.fetch()
 Next, call `sparky.fetch();` to render sparklines.
 
+#### Additional Options
 To adjust the appearance of the rendered sparkline, use one of these optional additional data attributes.
 * `data-sparkline-bgcolor` expects a string representing background color.
 * `data-sparkline-width` expects an integer representing pixel width.
